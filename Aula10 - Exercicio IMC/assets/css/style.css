@@ -1,0 +1,119 @@
+:root{
+    --primary: #4f6b3c;
+    --secondary: #6b3c3c;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+@font-face {
+    font-family: 'OpenDyslexic-Regular';
+    src: url('../fonts/OpenDyslexic-Regular.otf') format('truetype');
+    /* Adicione mais formatos e caminhos se necessário */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+font-family: 'OpenDyslexic-Italic';
+src: url('../fonts/OpenDyslexic-Italic.otf') format('truetype');
+/* Adicione mais formatos e caminhos se necessário */
+font-weight: normal;
+font-style: italic;}
+
+@font-face {
+    font-family: 'OpenDyslexic-Bold';
+    src: url('../fonts/OpenDyslexic-Bold.otf') format('truetype');
+    /* Adicione mais formatos e caminhos se necessário */
+    font-weight: normal;
+    font-style: bold;}
+
+@font-face {
+        font-family: 'OpenDyslexic-BoldItalic';
+        src: url('../fonts/OpenDyslexic-BoldItalic.otf') format('truetype');
+        /* Adicione mais formatos e caminhos se necessário */
+        font-weight: normal;
+        font-style: bold italic;}
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--primary);
+    font-family: 'OpenDyslexic-Regular',  sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    color: var(--dark);
+}
+
+.container{
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 20px;
+    background: var(--light);
+    border-radius: 10px;
+}
+
+section {
+    text-align: center;
+
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: var(--primary) solid 1px;
+  }
+  
+  form input:focus {
+    outline: 1px solid var(--primary);
+  }
+  
+  form button {
+    border: none;
+    border-radius: 10px;
+    background: var(--primary);
+    color: var(--light);
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  form button:hover {
+    background: var(--secondary);
+  }
+
+  .imc{
+    display: inline-block;
+    width: 45%; /* Ajuste conforme necessário, deixando espaço para margens */
+    margin-right: 2%; /* Adiciona espaçamento entre as divs */
+  }
+
+  .classification{
+    display: inline-block;
+    width: 45%; /* Ajuste conforme necessário, deixando espaço para margens */
+  }
+
+  .result{
+    text-align: center;
+  }
+
+  #bold{
+    font-family: 'OpenDyslexic-Bold',  sans-serif;
+  }
