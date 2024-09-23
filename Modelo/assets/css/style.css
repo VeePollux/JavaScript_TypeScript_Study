@@ -5,7 +5,7 @@
     --info: #17a2b8;
     --warning: #ffc107;
     --danger: #dc3545;
-    --light: #f8f9fa;
+    --light: #0079f3;
     --dark: #343a40;
 }
 
@@ -73,12 +73,12 @@ form input, form label, form button {
   }
   
   form input:focus {
-    outline: 1px solid var(--primary-color);
+    outline: 1px solid var(--primary);
   }
   
   form button {
     border: none;
-    background: var(--primary-color);
+    background: var(--primary);
     color: #fff;
     font-size: 18px;
     font-weight: 700;
@@ -88,5 +88,5 @@ form input, form label, form button {
   }
   
   form button:hover {
-    background: var(--primary-color-darker);
+    background: var(--dark);
   }
