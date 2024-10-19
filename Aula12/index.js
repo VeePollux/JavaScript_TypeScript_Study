@@ -52,3 +52,5 @@ console.log(endereco);
 
 const {endereco: {rua: r = 'Rua não existe', numero: num = 'Número não existe'}} = pessoa;
 console.log(r, num);
+
+
