@@ -1,0 +1,17 @@
+:root{
+    --primary: #4f6b3c;
+    --secondary: lightgray;}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--primary);}
+
+.container{
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 20px;
+    background: lightgray;
+    border-radius: 10px;}
+
+

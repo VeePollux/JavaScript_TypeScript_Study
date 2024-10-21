@@ -24,3 +24,7 @@ for(let key in pessoa){
 for(let value of frutas){
     console.log(value);
 }
+console.log('************');
+frutas.forEach((value, index) => {
+    console.log(index, value);
+});
