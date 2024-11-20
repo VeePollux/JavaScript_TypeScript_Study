@@ -108,3 +108,34 @@ function f3Callback() {
 })(25);
 
 const sobrenome = `Qualquer coisa`;
+
+//console.log(criaSobrenome('Santos')); //Erro, pois a função criaSobrenome não está disponível fora do escopo da função IIFE
+
+//Funções Fábrica
+function criaPessoa(nome, sobrenome){
+    return {
+        nome,
+        sobrenome,
+
+        get nomeCompleto(){
+            return `${this.nome} ${this.sobrenome}`;
+        },
+        //Setter
+        set nomeCompleto(valor){
+            valor = valor.split(' ');
+            this.nome = valor.shift();
+            this.sobrenome = valor.join(' ');
+        },
+        //Getter
+        get falaAssunto(){
+            return `${this.nome} esta falando ${this.assunto}`;
+        }
+    };
+}
+
+const p1 = criaPessoa('Vanessa', 'Santos');
+p1.assunto = 'JavaScript';
+console.log(p1.falaAssunto);
+console.log(p1.nome);
+p1.nomeCompleto = 'Ricardo Silva';
+console.log(p1.nomeCompleto);
