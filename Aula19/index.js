@@ -139,3 +139,23 @@ console.log(p1.falaAssunto);
 console.log(p1.nome);
 p1.nomeCompleto = 'Ricardo Silva';
 console.log(p1.nomeCompleto);
+
+//Função Construtora
+//Função construtora começa com letra maiúscula
+
+function Pessoa(nome, sobrenome){
+    //Atributos ou métodos privados
+    const ID = 123456;
+    const metodoInterno = function() {
+        console.log('Sou um método interno');
+    };
+
+    //Atributos ou métodos públicos
+    this.nome = nome;
+    this.sobrenome = sobrenome;
+
+    this.metodo = function(){
+        console.log(this.nome + ': Sou um método');
+    };
+    //Object.freeze(this); //Impede que o objeto seja alterado
+}

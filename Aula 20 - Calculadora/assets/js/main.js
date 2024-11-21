@@ -7,15 +7,12 @@ function criaCalculadora() {
         iniciar() {
             this.cliqueBotoes();
             this.pressionaEnter();
-            this.display.focus();
-
         },
 
 
         pressionaEnter() {
-            this.display.focus();
-            this.display.addEventListener('keyup', e => {
-                if(e.key=== 13) {
+            this.display.addEventListener('keypress', e => {
+                if(e.key === 'Enter') {
                     this.realizaConta();
                 }
             });
@@ -69,6 +66,7 @@ function criaCalculadora() {
 
         btnParaDisplay(valor) {
             this.display.value += valor;
+            this.display.focus();
         }
     }
 }
